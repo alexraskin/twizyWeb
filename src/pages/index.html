@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="KGB">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:title" content="KGB">
+  <meta property="og:url" content="https://twizy.sh">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/static/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.png">
+
+  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+
+  <style>
+      body {
+    margin: 0;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1E1E1E;
+  }
+  .vjs-big-play-button {
+      top: 50% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%) !important;
+    }
+    .vjs-fluid .vjs-big-play-button {
+    position: absolute !important;
+    }
+
+  </style>
+
+<title>KGB</title>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: black;">
+  <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="1280"
+    height="720"
+    poster="https://pub-25c917ace66846d288f5ee01ac63fb45.r2.dev/thumbnail.jpeg"
+    data-setup="{
+      'html5': {
+      nativeTextTracks: false
+      },
+    }"
+  >
+    <source src="https://pub-25c917ace66846d288f5ee01ac63fb45.r2.dev/kgb.mp4" type="video/mp4" />
+    <p class="vjs-no-js">
+    To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="https://videojs.com/html5-video-support/" target="_blank"
+    >supports HTML5 video</a>
+    </p>
+  </video>
+
+<script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
+</body>
+</html>
